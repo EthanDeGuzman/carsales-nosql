@@ -1,18 +1,18 @@
 <div class='container'>
     <div class="row border">
-        <div class="col-2">
+        <div class="col-2" style="margin-top: 5em;">
             {{carData.make}}
         </div>
-        <div class="col-2">
+        <div class="col-2" style="margin-top: 5em;">
             {{carData.model}}
         </div>
-        <div class="col-2">
+        <div class="col-2" style="margin-top: 5em;">
             {{carData.year}}
         </div>
         <div class="col-4">
             <img src="{{carData.imageURL}}" [style.width.px]="carImageWidth"/>
         </div>
-        <div class="col-2">
+        <div class="col-2" style="margin-top: 5.625em;">
             <button  class="btn btn-secondary" (click)="deleteCar(carData.id)">Delete Car</button>
         </div>
     </div>
